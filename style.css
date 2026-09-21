@@ -1,0 +1,38 @@
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden}
+body{background:#020300;color:#fff;font-family:Montserrat,sans-serif}
+#estrellas{position:fixed;inset:0;width:100%;height:100%;z-index:0}
+#lluvia{position:fixed;inset:0;pointer-events:none;z-index:8}
+.universo{position:relative;z-index:2;width:100vw;height:100vh;overflow:hidden;background:radial-gradient(circle at 50% 52%,rgba(255,229,0,.13),transparent 26%)}
+.aura{position:absolute;left:50%;top:51%;width:360px;height:360px;transform:translate(-50%,-50%);border-radius:50%;background:#f5e400;filter:blur(110px);opacity:.16;animation:pulse 3s infinite}
+.corazon-luz{position:absolute;left:50%;top:17%;transform:translateX(-50%);font:190px/1 Great Vibes,cursive;color:#f8ec56;text-shadow:0 0 8px #fff85b,0 0 30px #d9ff39,0 0 65px #b3d600;opacity:.72;animation:latido 2s infinite}
+.centro{position:absolute;left:50%;top:51%;transform:translate(-50%,-50%);text-align:center;z-index:4}
+.portal{width:135px;height:42px;border-radius:50%;border:3px solid #fff87a;box-shadow:0 0 8px white,0 0 22px #ffeb00,0 0 60px #f1ff00,inset 0 0 25px #fff700;animation:giro 4s linear infinite}
+.centro h1{font-family:Great Vibes,cursive;font-size:39px;margin:17px 0 2px;color:#fffbd3;text-shadow:0 0 12px #ffeb3b}.centro h1 span{color:#ffe900}
+.centro p{font-size:11px;opacity:.72;letter-spacing:1px}
+.flor{position:absolute;border:0;background:none;color:#fff;cursor:pointer;font-size:64px;filter:drop-shadow(0 0 12px #e8db00);transition:.35s;z-index:5;animation:flotar 3.5s ease-in-out infinite}
+.flor:hover{transform:scale(1.22) rotate(6deg);filter:drop-shadow(0 0 25px #fff200)}
+.flor small{display:block;font-size:12px;font-family:Montserrat,sans-serif;font-weight:700;white-space:nowrap;text-shadow:0 0 8px #000;margin-top:5px}
+.f1{left:12%;top:20%}.f2{left:28%;top:32%;animation-delay:-1s}.f3{right:11%;top:26%;animation-delay:-2s}.f4{right:28%;top:38%;animation-delay:-.4s}
+.f5{left:18%;bottom:17%;animation-delay:-1.7s}.f6{left:37%;bottom:11%;animation-delay:-2.3s}.f7{right:15%;bottom:16%;animation-delay:-.8s}.f8{right:34%;bottom:27%;animation-delay:-1.3s}
+.carta-btn{position:absolute;left:50%;bottom:5%;transform:translateX(-50%);padding:12px 24px;border-radius:30px;border:1px solid #ffea00;background:rgba(28,30,0,.65);color:#fff9a4;box-shadow:0 0 20px #b6a900;cursor:pointer;font-weight:700;z-index:6}
+.modal{position:fixed;inset:0;z-index:20;background:rgba(0,0,0,.8);backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;padding:20px}
+.modal.on{display:flex;animation:entrada .35s}
+.carta{width:min(440px,92vw);min-height:570px;background:linear-gradient(135deg,#ffdf55,#e7b72b);padding:22px;border-radius:16px;box-shadow:0 0 50px rgba(255,224,0,.55);position:relative;text-align:center}
+.carta:before{content:"";position:absolute;inset:16px;background:#fffdf2;border-radius:12px;z-index:0;box-shadow:inset 0 0 30px #ffe991}
+.carta>*{position:relative;z-index:1}.x{position:absolute;right:12px;top:8px;border:0;background:none;font-size:28px;cursor:pointer;color:#6c4c00}
+.ramito{font-size:55px;margin-top:22px}.carta h2{font:48px Great Vibes,cursive;color:#604500;margin:7px 0 14px}
+.carta p{color:#3e3a2d;font-size:14px;line-height:1.7;padding:0 24px}.firma{font:44px Great Vibes,cursive;color:#705000;margin:15px}.flores-carta{font-size:54px}
+.cerrar2{border:0;background:#e2b900;color:#3e3100;font-weight:700;border-radius:25px;padding:10px 20px;cursor:pointer}
+.particula{position:absolute;top:-50px;animation:caer linear forwards;filter:drop-shadow(0 0 7px #ffe600)}
+@keyframes caer{to{transform:translate(var(--x),110vh) rotate(720deg);opacity:.1}}
+@keyframes flotar{50%{margin-top:-13px}}
+@keyframes pulse{50%{transform:translate(-50%,-50%) scale(1.2);opacity:.25}}
+@keyframes latido{50%{transform:translateX(-50%) scale(1.07);opacity:1}}
+@keyframes giro{50%{transform:scaleX(.72) rotate(8deg)}}
+@keyframes entrada{from{opacity:0;transform:scale(.96)}}
+@media(max-width:700px){
+ .corazon-luz{font-size:120px;top:19%}.flor{font-size:45px}.flor small{font-size:9px}
+ .f1{left:3%;top:19%}.f2{left:15%;top:38%}.f3{right:2%;top:24%}.f4{right:13%;top:40%}
+ .f5{left:5%;bottom:17%}.f6{left:30%;bottom:9%}.f7{right:3%;bottom:17%}.f8{right:25%;bottom:30%}
+ .portal{width:105px}.centro h1{font-size:31px}.carta{min-height:530px}.carta h2{font-size:42px}
+}

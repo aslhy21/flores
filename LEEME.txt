@@ -1,0 +1,13 @@
+FLORES AMARILLAS 🌻
+Proyecto HTML/CSS/JavaScript inspirado en el efecto del video de referencia.
+
+ARCHIVOS:
+- index.html
+- style.css
+- script.js
+
+USO:
+1. Descomprime el ZIP.
+2. Abre index.html en Chrome.
+3. Toca las flores o el botón “Abrir carta”.
+4. Puedes cambiar los textos directamente en index.html.

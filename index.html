@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Flores Amarillas para Ti 🌻</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="estrellas"></canvas>
+<div id="lluvia"></div>
+
+<main class="universo">
+  <div class="aura"></div>
+  <div class="corazon-luz">♡</div>
+  <div class="centro">
+    <div class="portal"></div>
+    <h1>Te amo <span>♥</span></h1>
+    <p>Toca una flor 🌻</p>
+  </div>
+
+  <button class="flor f1" data-titulo="Mi amor 💛" data-msg="Estas flores amarillas son como tú: brillantes, radiantes y llenas de alegría.">🌻<small>Mi amor</small></button>
+  <button class="flor f2" data-titulo="Te adoro ✨" data-msg="Gracias por iluminar cada uno de mis días. Eres simplemente hermosa.">💐<small>Te adoro</small></button>
+  <button class="flor f3" data-titulo="Eres mi sol ☀️" data-msg="Incluso en los días grises, tú haces que todo vuelva a tener color.">🌻<small>Eres mi sol</small></button>
+  <button class="flor f4" data-titulo="Para ti 🌼" data-msg="Un pequeño jardín amarillo para recordarte cuánto significas para mí.">🌼<small>Para ti</small></button>
+  <button class="flor f5" data-titulo="Eres única 💛" data-msg="Entre millones de flores, siempre elegiría encontrarte a ti.">💐<small>Eres única</small></button>
+  <button class="flor f6" data-titulo="My Love 🌻" data-msg="Quiero seguir creando recuerdos bonitos contigo, uno tras otro.">🌻<small>My Love</small></button>
+  <button class="flor f7" data-titulo="Siempre tú ♡" data-msg="Si pudiera regalarte algo, sería la posibilidad de verte con mis ojos para que sepas lo especial que eres.">🌼<small>Siempre tú</small></button>
+  <button class="flor f8" data-titulo="Mi persona favorita 💛" data-msg="Tu sonrisa es mi lugar favorito. Estas flores son para ti.">🌻<small>Mi persona favorita</small></button>
+
+  <button id="cartaBtn" class="carta-btn">💌 Abrir carta</button>
+</main>
+
+<div class="modal" id="modal">
+  <div class="carta">
+    <button class="x" id="cerrar">×</button>
+    <div class="ramito">🌻🌼🌻</div>
+    <h2 id="titulo">Mi amor,</h2>
+    <p id="mensaje">Estas flores amarillas son como tú: brillantes, radiantes y llenas de alegría.</p>
+    <p>Gracias por animar cada uno de mis días. Eres simplemente hermosa.</p>
+    <div class="firma">Te Amo Mucho</div>
+    <div class="flores-carta">🌻🌻🌼</div>
+    <button class="cerrar2" id="cerrar2">Cerrar 🌻</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
